@@ -1,0 +1,27 @@
+// Copyright Colin Hill 2011
+
+#include "Pass.h"
+
+class AnalysisPass : public Pass {
+public:
+    void visitModule(Module* module);
+
+    void visitFunctionDefinition(FunctionDefinition* functionDefinition);
+
+    void visitParameter(Parameter* parameter);
+
+    void visitBlock(Block* block);
+
+    void visitLetStatement(LetStatement* letStatement);
+    void visitReturnStatement(ReturnStatement* returnStatement);
+    void visitIfStatement(IfStatement* ifStatement);
+    void visitExpressionStatement(ExpressionStatement* expressionStatement);
+
+    void visitBinaryExpression(BinaryExpression* binaryExpression);
+    void visitMethodExpression(MethodExpression* methodExpression);
+    void visitFunctionExpression(FunctionExpression* functionExpression);
+    void visitObjectExpression(ObjectExpression* objectExpression);
+    void visitIntegerExpression(IntegerExpression* integerExpression);
+
+private:
+};

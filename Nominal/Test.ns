@@ -1,0 +1,6 @@
+module Test
+
+add(x Integer, y Integer) {
+	let z = x + y
+	return z
+}
